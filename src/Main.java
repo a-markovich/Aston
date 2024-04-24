@@ -8,9 +8,9 @@ public class Main {
         compareNumbers(); // 4
         System.out.println(checkSumNumbers(-15, 30)); // 5
         printNumberSign(0); // 6
-        System.out.println(isNumberSign(0)); // 7
-        printStr("Hello!", 3); // 8
-        System.out.println(isLeapYear(2000)); // 9
+        System.out.println(checkSignOfNumber(0)); // 7
+        printString("Hello!", 3); // 8
+        System.out.println(checkThatYearIsLeap(2000)); // 9
         replaceArrayElements(); // 10
         fillArray(); // 11
         doubleArrayElements(); // 12
@@ -92,13 +92,13 @@ public class Main {
 
     /*    7. Напишите метод, которому в качестве параметра передается целое число.
         Метод должен вернуть true, если число отрицательное, и вернуть false если положительное.*/
-    public static boolean isNumberSign(int num) {
+    public static boolean checkSignOfNumber(int num) {
         return num < 0;
     }
 
     /*    8. Напишите метод, которому в качестве аргументов передается строка и число,
         метод должен отпечатать в консоль указанную строку, указанное количество раз;*/
-    public static void printStr(String str, int num) {
+    public static void printString(String str, int num) {
         for (int i = 1; i <= num; i++) {
             System.out.println(str);
         }
@@ -107,7 +107,7 @@ public class Main {
     /*    9. Напишите метод, который определяет, является ли год високосным,
         и возвращает boolean (високосный - true, не високосный - false).
         Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.*/
-    public static boolean isLeapYear(int year) {
+    public static boolean checkThatYearIsLeap(int year) {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
     }
 
