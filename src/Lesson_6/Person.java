@@ -1,3 +1,5 @@
+package Lesson_6;
+
 public class Person {
     private String fullName;
     private String position;
